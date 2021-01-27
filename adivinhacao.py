@@ -76,7 +76,16 @@ def jogar():
     # exemplo de f-string    
     nome = 92    
     print(f'Meu nome é {nome}')"""
+    print(__name__)
 
+
+# So sera executada quando o modulo for o principal
+# Caso ele tenha sido importado , o modulo so sera executado
+# quando a função jogar() for chamada explicitamente
+# Resumindo, a variável __name__ representa o nome do módulo.
+# Entretanto, quando o módulo é executado por si só como um programa, __name__
+# é definido para ’__main__’, diferente de quando o módulo é importado, no qual o
+# valor fica de fato igual ao nome do módulo.
 
 if(__name__ == "__main__"):
     jogar()
