@@ -2,9 +2,9 @@ def jogar():
     print("********************************")
     print("Bem vindo no jogo da Forca")
     print("********************************")
-    print("Fim de jogo")
 
     palavra_secreta = "banana"
+    letras_acertadas = ["_", "_", "_", "_", "_", "_"]
 
     enforcou = False
     acertou = False
@@ -13,7 +13,7 @@ def jogar():
 
         # funcao .strip() = retira o espaço do input ou de uma string
         # funcao .upper() = passa a string para letras maiusculas
-        chute = (input("Qual é a letra? ")).upper().strip()
+        chute = (input("Qual é a letra? ")).strip().upper()
 
         # find nao vai funcionar , pois existe letras repetidas
         # vamos implementar um for para pecorrer a palavra
@@ -21,9 +21,9 @@ def jogar():
         index = 0
         for letra in palavra_secreta:
             if chute == letra.upper():
-                print("Encontrei a letra: {} na posição {}".format(
-                    letra, index))
+                letras_acertadas[index] = letra
             index += 1
+        print(letras_acertadas)
 
         print("jogando...")
 
