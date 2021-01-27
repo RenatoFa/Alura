@@ -2,3 +2,6 @@ banana
 melancia
 morango
 maca
+laranja
+pera
+uva
