@@ -1,11 +1,5 @@
-<<<<<<< HEAD
-# -*- coding: utf-8 -*-
-
-def jogar():
-=======
 import random
 
->>>>>>> ab222570db11d95bc0a5db265c366d43a151cefe
 
 def imprime_abertura():
     print("********************************")
@@ -93,7 +87,7 @@ def jogar():
 
         # funcao .strip() = retira o espaço do input ou de uma string
         # funcao .upper() = passa a string para letras maiusculas
-        chute = ((input("Qual é a letra? ")).strip().upper())
+        chute = (input("Qual é a letra? ")).strip().upper()
         # find nao vai funcionar , pois existe letras repetidas
         # vamos implementar um for para pecorrer a palavra
         # A tupla é uma sequecia tambem ( igual a lista) , so que ela é imutavel.
