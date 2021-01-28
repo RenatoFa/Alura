@@ -1,11 +1,6 @@
-<<<<<<< HEAD
 # -*- coding: utf-8 -*-
-
-def jogar():
-=======
 import random
 
->>>>>>> ab222570db11d95bc0a5db265c366d43a151cefe
 
 def imprime_abertura():
     print("********************************")
